@@ -1,0 +1,33 @@
+
+# ?? ?? ??
+server:
+  port: 9001
+
+# database ?? ??
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: qnelldo
+    password: 1234
+    url: jdbc:mysql://13.125.109.159:3306/board?characterEncoding=UTF-8&serverTimezone=UTC
+
+  thymeleaf:
+    cache : false
+
+# ?????? ??
+  application :
+    name : board
+
+  mvc:
+    throw-exception-if-no-handler-found: true
+
+  tomcat:
+    uri-encoding: UTF-8
+
+# Spring Data JPA ??
+  jpa:
+    open-in-view : false
+    show-sql : true
+    hibernate:
+      ddl-auto: create
+
